@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>TestServlet</servlet-name>
+        <servlet-class>myPackage.cart.TestServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CartServlet</servlet-name>
+        <servlet-class>myPackage.cart.CartServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddToCartServlet</servlet-name>
+        <servlet-class>myPackage.cart.AddToCartServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ContactInformationServlet</servlet-name>
+        <servlet-class>myPackage.cart.ContactInformationServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddressInfoServlet</servlet-name>
+        <servlet-class>myPackage.cart.AddressInfoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>OrderSummaryServlet</servlet-name>
+        <servlet-class>myPackage.cart.OrderSummaryServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CheckoutDetailsServlet</servlet-name>
+        <servlet-class>myPackage.cart.CheckoutDetailsServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CartDetailsServlet</servlet-name>
+        <servlet-class>myPackage.cart.CartDetailsServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>OrderCompleteServlet</servlet-name>
+        <servlet-class>myPackage.cart.OrderCompleteServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddCategoryServlet</servlet-name>
+        <servlet-class>myPackage.admin.AddCategoryServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CategoriesServlet</servlet-name>
+        <servlet-class>myPackage.admin.CategoriesServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SigninServlet</servlet-name>
+        <servlet-class>myPackage.authentication.SigninServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SignoutServlet</servlet-name>
+        <servlet-class>myPackage.authentication.SignoutServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SignupServlet</servlet-name>
+        <servlet-class>myPackage.authentication.SignupServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteServlet</servlet-name>
+        <servlet-class>myPackage.admin.DeleteServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetCategoryServlet</servlet-name>
+        <servlet-class>myPackage.admin.GetCategoryServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UpdateCategoryServlet</servlet-name>
+        <servlet-class>myPackage.admin.UpdateCategoryServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddProductServlet</servlet-name>
+        <servlet-class>myPackage.admin.AddProductServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ProductsServlet</servlet-name>
+        <servlet-class>myPackage.admin.ProductsServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetProductServlet</servlet-name>
+        <servlet-class>myPackage.admin.GetProductServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UpdateProductServlet</servlet-name>
+        <servlet-class>myPackage.admin.UpdateProductServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>OrdersServlet</servlet-name>
+        <servlet-class>myPackage.admin.OrdersServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ProductByCatServlet</servlet-name>
+        <servlet-class>myPackage.shop.ProductByCatServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetCartTotalServlet</servlet-name>
+        <servlet-class>myPackage.cart.GetCartTotalServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetLatestProductsServlet</servlet-name>
+        <servlet-class>myPackage.shop.GetLatestProductsServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddToWishlistServlet</servlet-name>
+        <servlet-class>myPackage.wishlist.AddToWishlistServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>WishlistServlet</servlet-name>
+        <servlet-class>myPackage.wishlist.WishlistServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteWishlistServlet</servlet-name>
+        <servlet-class>myPackage.wishlist.DeleteWishlistServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SendMessageServlet</servlet-name>
+        <servlet-class>myPackage.contact.SendMessageServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetTotalsServlet</servlet-name>
+        <servlet-class>myPackage.admin.GetTotalsServlet</servlet-class>
+    </servlet>
+    
+
+    <servlet>
+        <servlet-name>UsersServlet</servlet-name>
+        <servlet-class>myPackage.admin.UsersServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>AddUserServlet</servlet-name>
+        <servlet-class>myPackage.admin.AddUserServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>UpdateUserServlet</servlet-name>
+        <servlet-class>myPackage.admin.UpdateUserServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>DeleteUserServlet</servlet-name>
+        <servlet-class>myPackage.admin.DeleteUserServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>RemoveCartItemServlet</servlet-name>
+        <servlet-class>myPackage.cart.RemoveCartItemServlet</servlet-class>
+    </servlet>
+
+<servlet>
+    <servlet-name>GetOrderItemsServlet</servlet-name>
+    <servlet-class>myPackage.admin.GetOrderItemsServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>GetOrderItemsServlet</servlet-name>
+    <url-pattern>/GetOrderItemsServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>SubmitReviewServlet</servlet-name>
+    <servlet-class>myPackage.admin.SubmitReviewServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>SubmitReviewServlet</servlet-name>
+    <url-pattern>/SubmitReviewServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>GetOrderReviewsServlet</servlet-name>
+    <servlet-class>myPackage.admin.GetOrderReviewsServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>GetOrderReviewsServlet</servlet-name>
+    <url-pattern>/GetOrderReviewsServlet</url-pattern>
+</servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateProfileServlet</servlet-name>
+        <servlet-class>myPackage.admin.UpdateProfileServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateProfileServlet</servlet-name>
+        <url-pattern>/UpdateProfileServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>GetUserOrdersServlet</servlet-name>
+        <servlet-class>myPackage.admin.GetUserOrdersServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetUserOrdersServlet</servlet-name>
+        <url-pattern>/GetUserOrdersServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>RemoveCartItemServlet</servlet-name>
+        <url-pattern>/RemoveCartItemServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UsersServlet</servlet-name>
+        <url-pattern>/admin/getUsers</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>AddUserServlet</servlet-name>
+        <url-pattern>/admin/addUser</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>UpdateUserServlet</servlet-name>
+        <url-pattern>/admin/updateUser</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>DeleteUserServlet</servlet-name>
+        <url-pattern>/admin/deleteUser</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GetCurrentUserServlet</servlet-name>
+        <servlet-class>myPackage.admin.GetCurrentUserServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>RemoveOrderItemServlet</servlet-name>
+        <servlet-class>myPackage.cart.RemoveOrderItemServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>RemoveOrderItemServlet</servlet-name>
+        <url-pattern>/RemoveOrderItemServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>GetCurrentUserServlet</servlet-name>
+        <url-pattern>/GetCurrentUserServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>TestServlet</servlet-name>
+        <url-pattern>/TestServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CartServlet</servlet-name>
+        <url-pattern>/CartServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddToCartServlet</servlet-name>
+        <url-pattern>/AddToCartServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ContactInformationServlet</servlet-name>
+        <url-pattern>/ContactInformationServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddressInfoServlet</servlet-name>
+        <url-pattern>/AddressInfoServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>OrderSummaryServlet</servlet-name>
+        <url-pattern>/OrderSummaryServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CheckoutDetailsServlet</servlet-name>
+        <url-pattern>/CheckoutDetailsServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CartDetailsServlet</servlet-name>
+        <url-pattern>/CartDetailsServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>OrderCompleteServlet</servlet-name>
+        <url-pattern>/OrderCompleteServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddCategoryServlet</servlet-name>
+        <url-pattern>/AddCategoryServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CategoriesServlet</servlet-name>
+        <url-pattern>/CategoriesServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteServlet</servlet-name>
+        <url-pattern>/DeleteServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetCategoryServlet</servlet-name>
+        <url-pattern>/GetCategoryServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdateCategoryServlet</servlet-name>
+        <url-pattern>/UpdateCategoryServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddProductServlet</servlet-name>
+        <url-pattern>/AddProductServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProductsServlet</servlet-name>
+        <url-pattern>/ProductsServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetProductServlet</servlet-name>
+        <url-pattern>/GetProductServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdateProductServlet</servlet-name>
+        <url-pattern>/UpdateProductServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>OrdersServlet</servlet-name>
+        <url-pattern>/OrdersServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SigninServlet</servlet-name>
+        <url-pattern>/SigninServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SignupServlet</servlet-name>
+        <url-pattern>/SignupServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SignoutServlet</servlet-name>
+        <url-pattern>/SignoutServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProductByCatServlet</servlet-name>
+        <url-pattern>/ProductByCatServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetCartTotalServlet</servlet-name>
+        <url-pattern>/GetCartTotalServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetLatestProductsServlet</servlet-name>
+        <url-pattern>/GetLatestProductsServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddToWishlistServlet</servlet-name>
+        <url-pattern>/AddToWishlistServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>WishlistServlet</servlet-name>
+        <url-pattern>/WishlistServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteWishlistServlet</servlet-name>
+        <url-pattern>/DeleteWishlistServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SendMessageServlet</servlet-name>
+        <url-pattern>/SendMessageServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetTotalsServlet</servlet-name>
+        <url-pattern>/GetTotalsServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
