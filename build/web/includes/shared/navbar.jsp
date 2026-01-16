@@ -1,6 +1,7 @@
 <nav>
     <div class="container">
         <div class="nav-wrapper">
+
             <div class="logo-wrapper">
                 <button class="mobile-nav-toggle" id="mobile-nav-toggle" onclick="openMobileNav()">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -10,13 +11,13 @@
                 </button>
                 <p>Rasa Giri</p>
             </div>
-            
+
             <ul class="nav-list" role="list">
                 <li><a href="index.jsp">Home</a></li>
                 <li><a href="shop.jsp">Shop</a></li>
                 <li><a href="contactus.jsp">Contact us</a></li>
             </ul>
-            
+
             <div class="nav-icons">
 
                 <button class="profile-button" onclick="toggleProfileDropdown()">
@@ -24,28 +25,27 @@
                         <path d="M18.5588 19.5488C17.5654 16.8918 15.0036 15 12 15C8.99638 15 6.4346 16.8918 5.44117 19.5488M18.5588 19.5488C20.6672 17.7154 22 15.0134 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 15.0134 3.33285 17.7154 5.44117 19.5488M18.5588 19.5488C16.8031 21.0756 14.5095 22 12 22C9.49052 22 7.19694 21.0756 5.44117 19.5488M15 9C15 10.6569 13.6569 12 12 12C10.3431 12 9 10.6569 9 9C9 7.34315 10.3431 6 12 6C13.6569 6 15 7.34315 15 9Z" stroke="#141718" stroke-width="1.5" stroke-linejoin="round"/>
                         <path d="M18.5588 19.5488C17.5654 16.8918 15.0036 15 12 15C8.99638 15 6.4346 16.8918 5.44117 19.5488M18.5588 19.5488C20.6672 17.7154 22 15.0134 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 15.0134 3.33285 17.7154 5.44117 19.5488M18.5588 19.5488C16.8031 21.0756 14.5095 22 12 22C9.49052 22 7.19694 21.0756 5.44117 19.5488M15 9C15 10.6569 13.6569 12 12 12C10.3431 12 9 10.6569 9 9C9 7.34315 10.3431 6 12 6C13.6569 6 15 7.34315 15 9Z" stroke="black" stroke-opacity="0.2" stroke-width="1.5" stroke-linejoin="round"/>
                     </svg>
-                    
+
                     <div class="profile-dropdown" id="profile-dropdown">
                         <ul class="list" role="list">
                             <%
-                              Integer navUserId = (Integer) session.getAttribute("userId");
-                              if (navUserId != null) {
+                                Integer navUserId = (Integer) session.getAttribute("userId");
+                                if (navUserId != null) {
                             %>
                                 <li><a href="profile.jsp">Profile</a></li>
                                 <li><a onClick="signOut()">Log Out</a></li>
                             <%
-                              } else {
+                                } else {
                             %>
                                 <li><a href="signup.jsp">Sign Up</a></li>
                                 <li><a href="signin.jsp">Sign In</a></li>
                             <%
-                              }
+                                }
                             %>
                         </ul>
                     </div>
                 </button>
 
-                <!-- SHOW ONLY IF LOGGED IN -->
                 <% if (session.getAttribute("userId") != null) { %>
 
                 <a href="cart.jsp" class="cart-button">
@@ -59,7 +59,7 @@
                 </a>
 
                 <button class="cart-button" id="wishlist-btn" onclick="openWishlistSidebar()">
-                    <img src="assets/images/icons/heart.png" />
+                    <img src="assets/images/icons/heart.png"/>
                 </button>
 
                 <% } %>
@@ -67,9 +67,10 @@
             </div>
         </div>
     </div>
-    
+
     <div class="mobile-nav" id="mobile-nav">
         <div class="mobile-nav-top">
+
             <div class="top-wrapper">
                 <button onclick="closeMobileNav()">
                     <img src="assets/images/icons/close.png"/>
@@ -91,11 +92,12 @@
                 <li><a href="shop.jsp">Shop</a></li>
                 <li><a href="contactus.jsp">Contact us</a></li>
             </ul>
+
         </div>
 
         <div class="mobile-nav-bottom">
-
             <% if (session.getAttribute("userId") != null) { %>
+
             <a href="cart.jsp" class="action-wrapper">
                 <span>Cart</span>
                 <div class="action-icon">
@@ -109,8 +111,8 @@
                     <span id="mobile-wishlist-total">0</span>
                 </div>
             </a>
-            <% } %>
 
+            <% } %>
         </div>
     </div>
 
@@ -118,26 +120,24 @@
         const currentPage = window.location.pathname.split("/").pop();
 
         document.querySelectorAll('.nav-list li a').forEach(link => {
-            if(link.getAttribute('href') === currentPage) {
+            if (link.getAttribute('href') === currentPage) {
                 link.classList.add('active');
             }
         });
 
         document.querySelectorAll('.mobile-nav-list li a').forEach(link => {
-            if(link.getAttribute('href') === currentPage) {
+            if (link.getAttribute('href') === currentPage) {
                 link.classList.add('active');
             }
         });
-        
-        
-    document.addEventListener('click', function(event) {
-    var profileDropdown = document.getElementById('profile-dropdown');
-    var profileButton = document.querySelector('.profile-button');
-    
-   
-    if (!profileButton.contains(event.target)) {
-        profileDropdown.classList.remove('active');
-    }
-});
+
+        document.addEventListener('click', function(event) {
+            var profileDropdown = document.getElementById('profile-dropdown');
+            var profileButton = document.querySelector('.profile-button');
+
+            if (!profileButton.contains(event.target)) {
+                profileDropdown.classList.remove('active');
+            }
+        });
     </script>
 </nav>
